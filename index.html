@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Marija Vandot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="header-title">MARIJA VANDOT</h1>
+        <p class="header-subtitle">Ljubljana-based, wannabe Fronted Web Developer</p>
+    </header>
+    <nav>
+        <ul class="menu">
+           <li><a href="#">About</a></li>
+           <div class="dropdown"> 
+                <a href="#projects" class="dropitem">Projects</a>
+                <div class="dropdown-content">
+                    <a href="https://mvandot.github.io/flexbox-business-site-starting/">Playroom</a>
+                    <a href="https://mvandot.github.io/Dasmoto/">Dasmoto</a>
+                    <a href="https://mvandot.github.io/responsive-club/">Club</a>
+                    <a href="https://mvandot.github.io/html-css-cheatsheet-starting/">Sheet</a>
+                </div>
+            </div>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="images/marija.png" alt="marija">
+                </div>
+                <div class="about-text">
+                    <p class="about-hi">Hi, I'm Marija!</p>
+                    <p>I'm an Account Manager at a HealthTech startup, with a wealth of
+                    Customer Success experience in Ad Tech & Programatic Industry. 
+                    <br>
+                    My educational background is Programming, but I never worked as a programmer.
+                    I decided to take a career transition and to commit to the Codecademy Frontend
+                    Developer path.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <details class="project">
+              <summary class="project-title" onclick="showImage()">
+                <h3><span>*</span>Playroom</h3>
+              </summary>
+              <p class="project-description">
+                Business website - Playroom for kids
+                CSS Flexbox presentation throughout all sections
+              </p>
+                <a href="https://mvandot.github.io/flexbox-business-site-starting/">
+                  <img
+                  src="images/playroom.png"
+                  alt="Playroom for kids"
+                  clas="project-image"
+                  />
+                </a> 
+            </details>
+            <details class="project">
+              <summary class="project-title">
+                <h3><span>*</span>Dasmoto</h3>
+              </summary>
+              <p class="project-description">
+                Font colors, font weight, background colors of boxes  
+              </p>
+              <a href="https://mvandot.github.io/Dasmoto/">
+                <img
+                  src="images/dasmoto.png"
+                  alt="Screenshot of Dasmoto website home page"
+                  class="project-image"
+                />
+            </a>
+            </details>
+            <details class="project">
+              <summary class="project-title">
+                <h3><span>*</span>Club</h3>
+              </summary>
+              <p class="project-description">
+                Static website for local sport club - HTML, CSS
+               </p>
+              <a href="https://mvandot.github.io/responsive-club/">
+                <img
+                  src="images/club.png"
+                  alt="Business Statis Website for local swimming club"
+                  class="project-image"
+                />
+              </a>
+            </details>
+            <details class="project">
+              <summary class="project-title">
+                <h3><span>*</span>Sheet</h3>
+              </summary>
+              <p class="project-description">
+                Statis cheetsheet website with most common HTML and CSS tags for building and designing tables          
+              </p>
+              <a href="https://mvandot.github.io/html-css-cheatsheet-starting/">
+                <img
+                  src="images/sheet.png"
+                  alt="Cheetsheet for HTML and CSS table tags"
+                  class="project-image"
+                />
+              </a>
+            </details>
+        </section>
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div id="skills-container">
+              <i class="fa fa-html5"></i>
+              <i class="fa fa-css3"></i>
+              <i class="fa fa-js"></i>
+              <i class="fa fa-git"></i>
+              <i class="fa fa-chrome"></i>
+              <i class="fa fa-terminal"></i>
+              <i class="fa fa-universal-access"></i>
+              <i class="fa fa-github"></i>
+            </div>
+        </section>
+    </main>
+    <footer>Made with <span class="heart">♥</span> in Ljubljana</footer>
+  </body>
+  <script>
+    function showImage () {
+      let image = document.getElementsByClassName("project-image");
+      image.style.display = "flex";
+      image.style.width = "100%";
+      image.style.marginTop = "2%";
+    }
+
+    let el = document.getElementsByClassName("project_title");
+    el.addEventListener ("click", showImage, false);
+  </script>
+</html> 

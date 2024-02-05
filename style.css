@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* text-align: center; */
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    text-align: center;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    margin: 5em 0;
+    /* max-width: 50%;
+    margin: 0 auto; */
+}
+
+
+.header-title {
+    font-size: 4em;
+    letter-spacing: 0.05em;
+    font-weight: 900;
+}
+
+.header-title:hover {
+    color: #87CEEB;
+}
+
+.header-subtitle {
+    font-size: 1.5em;
+    /* line-height: 1.5em; */
+    color: lightgray;
+    padding: 0;
+    margin-top: 1em;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    font-size: 1.3em;
+    line-height: 3em;
+    text-align: center;
+    color: #454545;
+    display: inline;
+    margin: 0 1.5em;
+}
+
+.menu a {
+    color: #454545;
+}
+.menu a:hover {
+    color: #87CEEB;
+}
+
+.menu a:active {
+    color: #87CEEB;
+}
+
+/* Dropdown Item */
+.dropitem {
+    font-size: 1.3em;
+    color: #87CEEB;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 1.5em 0.2em;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #454545;
+    padding: 0.2em 0;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3em;
+    margin-top: 0.4em;
+    text-align: left;
+  }
+  
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+
+/* Main */
+main {
+    margin: 10em 0;
+}
+
+.section-title{
+    font-size: 3.2em;
+    font-weight: bolder;
+    letter-spacing: 0.3em;
+    margin: 10%;
+}
+
+/* About */
+.about-container {
+    display: flex;
+    column-gap: 1%;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    flex: 45%;
+}
+
+.about-text {
+    text-align: left;
+    flex: 49%;
+    line-height: 1.3em;
+    word-spacing: 0.2em;
+}
+
+.about-hi {
+    font-size: 1.4em;
+    font-weight: 800;
+    margin-bottom: 0.9em;
+}
+
+/* Projects */
+#projects {
+    margin-top: 10%;
+}
+
+.project-title {
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+}
+
+.project-title span {
+    font-size: 1em;
+    color: #87CEEB;
+}
+
+.project-description {
+    margin-bottom: 2em;
+}
+
+#playroom_big {
+    display:none;
+ }
+
+ /* Skills */
+
+ #skills {
+    margin-top: 10%;
+ }
+
+  #skills-container {
+    font-size: 2em;
+  }
+
+ /* Contact */
+#contact-container {
+    font-size: 2em;
+}
+ 
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+    .about-container {
+      flex-direction: column;
+    }
+    .about-text {
+        text-align: center;
+    }
+    .about-hi {
+        margin-top: 1em;
+    }
+
+    main {
+        margin: 7em 0;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    body {
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        padding: 2%;
+        max-width: 88%;
+    } 
+
+    .header-subtitle {
+        margin: 2%;
+    }
+
+    main {
+        margin: 7em 0;
+    }
+  }
+
+  /* @media only screen and (max-width: 320px) {
+    body {
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        text-align: center;
+        margin: 2%; 
+    }
+
+    .header-subtitle {
+        margin: 2%;
+    } */
+ 
