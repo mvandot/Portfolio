@@ -50,7 +50,7 @@
             <h2 class="section-title">Projects</h2>
             <details class="project">
               <summary class="project-title" onclick="showImage()">
-                <h3><span>*</span>Playroom</h3>
+                <h3 onmouseover="showPointer()"><span>*</span>Playroom</h3>
               </summary>
               <p class="project-description">
                 Business website - Playroom for kids
@@ -134,7 +134,18 @@
       image.style.marginTop = "2%";
     }
 
-    let el = document.getElementsByClassName("project_title");
+    let el = document.getElementsByTagName("project_title");
     el.addEventListener ("click", showImage, false);
+
+   
+      let project = document.getElementsByTagName("h3");
+      project.style.cursor = "ponter";
+
+
+    project.addEventListener("onMouseOver", function (e) {
+  console.log(e.currentTarget === this); // logs `true`
+});
+
+    
   </script>
 </html> 
